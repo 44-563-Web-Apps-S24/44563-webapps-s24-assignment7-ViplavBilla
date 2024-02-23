@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Money Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(9, 88, 82);
+            margin: 15px;
+        }
+
+        .flex-container>p {
+            /*div children of the flex container*/
+            background-color: rgb(67, 205, 17);
+            margin: 20px;
+            padding: 20px;
+            font-size: 20px;
+        }
+
+        /* Responsive layout */
+        @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+                background-color: rgb(27, 216, 20);
+            }
+        }
+
+        h2 {
+            background-color: blue;
+            padding: 20px;
+            margin: 20px;
+        }
+        div.row > div{
+            margin-right:10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Find the coins by Viplav Billa</h2>
+    <div class="flex-container">
+        <p>Click on the locations to find coins, beware the monster</p>
+        <p id="locations">Number of locations checked is zero</p>
+        <p id="score">Score is zero</p>
+        <p>Click for help</p>
+        <p id="help">Help report</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="fancierCoin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="fancierCoin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="fancierCoin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="fancierCoin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="fancierCoin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="fanciercoin"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="10px" alt="fancierCoin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="coin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="fancierCoin"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="monster"></div>
+            <div class="col-sm-2"><img src="building.jpg" height="150px" width="150px" alt="building"></div>
+        </div>
+    </div>
+</body>
+</html>
