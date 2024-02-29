@@ -15,7 +15,7 @@
   <div id="counter">Count</div>
   <button type="button" id="start" onclick="startTime()" style="padding: 10px; margin: 10px; background-color: aquamarine;">Start timer</button>
   <button type="button" id="stop" onclick="recordTime()" style="padding: 10px; margin: 10px; background-color: cadetblue;">Stop timer</button>
-  
+  <button type="button" id="start" onclick="startRandom()" style="padding: 10px; margin: 10px; background-color: cadetblue;">random</button>
   
 
  <script>
@@ -29,6 +29,22 @@
         document.getElementById('stop').onclick = recordTime;
         function startTime() {
             for (let a = 0; a < 5; a++) {
+                setTimeout(function() {
+                    document.getElementById('counter').innerHTML = a;
+                }, (4 - a) * 1000);
+            }
+            setTimeout(function() {
+                if (stopTime == undefined) {
+                    document.getElementById('target').innerHTML = "Too Slow";
+                } else {
+                    let elapsedTime = stopTime - (Date.now() - 4000);
+                    document.getElementById('target').innerHTML = "Time was " + elapsedTime + "ms";
+                }
+            }, 4000);
+        }
+        function startRandom() {
+            ran = Math.floor(Math.random()*9)+2;
+            for (let a = 0; a < ran; a++) {
                 setTimeout(function() {
                     document.getElementById('counter').innerHTML = a;
                 }, (4 - a) * 1000);
